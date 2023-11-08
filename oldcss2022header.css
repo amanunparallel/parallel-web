@@ -1,0 +1,106 @@
+/* ALL PAGES CSS 2022*/
+/* Media Queries */
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .link.nav-links {
+    font-size: 16px;
+  }
+}
+
+#Message {
+  resize: none;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media only screen and (min-width: 600px) {
+  .marqee-image {
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+
+  .clip-case {
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .marqee-image {
+    clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  }
+
+  .clip-case {
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+/*recruitee font color */
+#recruitee-careers-details-container
+  .rt-theme-light
+  .rt-details__content--form
+  input[type="email"],
+#recruitee-careers-details-container
+  .rt-theme-light
+  .rt-details__content--form
+  input[type="number"],
+#recruitee-careers-details-container
+  .rt-theme-light
+  .rt-details__content--form
+  input[type="password"],
+#recruitee-careers-details-container
+  .rt-theme-light
+  .rt-details__content--form
+  input[type="tel"],
+#recruitee-careers-details-container
+  .rt-theme-light
+  .rt-details__content--form
+  input[type="text"],
+#recruitee-careers-details-container
+  .rt-theme-light
+  .rt-details__content--form
+  select,
+#recruitee-careers-details-container
+  .rt-theme-light
+  .rt-details__content--form
+  textarea,
+#recruitee-careers
+  .rt-theme-light
+  .rt-details__content--form
+  input[type="email"],
+#recruitee-careers
+  .rt-theme-light
+  .rt-details__content--form
+  input[type="number"],
+#recruitee-careers
+  .rt-theme-light
+  .rt-details__content--form
+  input[type="password"],
+#recruitee-careers .rt-theme-light .rt-details__content--form input[type="tel"],
+#recruitee-careers
+  .rt-theme-light
+  .rt-details__content--form
+  input[type="text"],
+#recruitee-careers .rt-theme-light .rt-details__content--form select,
+#recruitee-careers .rt-theme-light .rt-details__content--form textarea {
+  color: black !important;
+}
+
+#recruitee-careers-details-container .rt-theme-light .rt__button--outline,
+#recruitee-careers .rt-theme-light .rt__button--outline {
+  color: black !important;
+}
+
+#messageArea {
+  resize: none;
+}
