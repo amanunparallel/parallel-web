@@ -1,0 +1,56 @@
+[home="servicelink"] > [home="servicecontent"] {
+  height: 0px;
+  opacity: 0;
+}
+
+[home="servicelink"].active > [home="servicecontent"] {
+  height: auto;
+  opacity: 1;
+}
+
+[home="servicelink"] .newhome_sectionfour__line {
+  transform: rotate3d(0, 0, 1, 0deg);
+  transform-origin: center center; /* Set the transform origin to the center */
+  transition: transform 0.3s ease;
+}
+
+[home="servicelink"].active .newhome_sectionfour__line {
+  transform: rotate3d(0, 0, 1, 90deg);
+  transform-origin: center center; /* Set the transform origin to the center */
+}
+.newhome_sectionfour__tab-heading {
+  opacity: 0.2;
+}
+
+.newhome_sectionfour__tab-link.active .newhome_sectionfour__tab-heading {
+  opacity: 1;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.newhome_project1b__image {
+  animation: rotate 20s linear infinite; /* Adjust the animation duration as needed */
+}
+
+[navnew] {
+  opacity: 0;
+}
+
+.line {
+  transform: translateY(100%);
+}
+
+.newhome_sectiontwo {
+  opacity: 0;
+}
+
+[home="sectwo"] {
+  opacity: 0;
+  transform: translateY(30%);
+}
