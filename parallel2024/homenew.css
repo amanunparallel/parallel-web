@@ -18,9 +18,15 @@
   transform: rotate3d(0, 0, 1, 90deg);
   transform-origin: center center; /* Set the transform origin to the center */
 }
+
+
 .newhome_sectionfour__tab-heading {
   opacity: 0.4;
 }
+
+.newhome_sectionFour__tab-link:hover .newhome_sectionfour__tab-heading {
+  opacity: 0.8;
+} 
 
 .newhome_sectionfour__tab-link.active .newhome_sectionfour__tab-heading {
   opacity: 1;
