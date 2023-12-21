@@ -24,11 +24,13 @@
   opacity: 0.4;
 }
 
-.newhome_sectionFour__tab-link:hover .newhome_sectionfour__tab-heading {
+.newhome_sectionfour__tab-link:hover .newhome_sectionfour__tab-heading{
   opacity: 0.8;
-} 
-
+}
 .newhome_sectionfour__tab-link.active .newhome_sectionfour__tab-heading {
+  opacity: 1;
+}
+.newhome_sectionfour__tab-link.active:hover .newhome_sectionfour__tab-heading{
   opacity: 1;
 }
 
