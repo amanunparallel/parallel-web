@@ -19,7 +19,7 @@
   transform-origin: center center; /* Set the transform origin to the center */
 }
 .newhome_sectionfour__tab-heading {
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .newhome_sectionfour__tab-link.active .newhome_sectionfour__tab-heading {
