@@ -4,9 +4,9 @@
   data-video="player"
   data-video-link="video-link" 
   data-autoplay="true"> <!--At video link your video link, boolean value for autoplay of video here -->
-  <div class="placeholder"> 
-    <img alt="" src="place-holder image"> <!-- placeholder image here -->
-  </div>
+  
+ <!-- this image should be overlapping using absolute. -->
+  <img alt="" src="place-holder image"> <!-- placeholder image here -->
   <div>
      <!-- make sure to add this using embed tag -->
     <video class="video" muted loading="lazy">
@@ -15,7 +15,7 @@
     </video>
   </div>
   <!-- button for play/pause -->
-  <a href="#" class="video-play-pause-btn w-button">Play</a>
+  <a href="#" data-video="play-pause-btn" class="video-play-pause-btn w-button">Play</a>
 </div>
 */
 
@@ -45,7 +45,7 @@
         //});
         
         //handling autoplay for the videos
-        if(autoplay==='true'){
+        if(autoplay==='true' && placeholder){
         videoPlayer.autoplay = true;
         placeholder.style.display = 'none'; 
         }
