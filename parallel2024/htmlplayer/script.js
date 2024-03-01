@@ -28,7 +28,7 @@ videoPlayerWrapper.forEach((player) => {
   // Select the video element within the player
   const videoPlayer = player.querySelector("video");
   // Select the control button element within the player
-  const videoControlBtn = player.querySelector("a");
+  const videoControlBtn = player.querySelector("[data-video='play-pause-btn']");
   // Select the placeholder element within the player
   const placeholder = player.querySelector(".placeholder");
   // Select the source element within the player
