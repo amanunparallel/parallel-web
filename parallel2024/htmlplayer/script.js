@@ -107,7 +107,7 @@
                 videoControlBtn.textContent = "Play";
                 videoPlayer.pause();
             } else {
-                videoPlayer.play();
+                // videoPlayer.play();
             }
         });
     });
