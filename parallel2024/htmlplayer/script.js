@@ -57,7 +57,9 @@
 
         // Handle click event on the control button to play/pause the video
         videoControlBtn.addEventListener("click", function(){
+            if(placeholder){
             placeholder.style.display = 'none'; 
+            }
             const clickEvent = new MouseEvent('click', {
                 bubbles: true,
                 cancelable: true,
@@ -69,7 +71,9 @@
         // Efficiently play and pause the video on click
         let totalClicks = 0;
         videoPlayer.addEventListener("click", function() {
+            if(placeholder){
             placeholder.style.display = 'none'; 
+            }
             totalClicks++;
             if(totalClicks === 1){
                 videoControlBtn.textContent = "Pause";
