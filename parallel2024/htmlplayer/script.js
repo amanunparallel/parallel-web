@@ -101,13 +101,14 @@
                 rect.top < (window.innerHeight || document.documentElement.clientHeight)
             );
         }
-
-        window.addEventListener("scroll", function() {
-            if (!isInViewport(videoPlayer)) {
-                videoControlBtn.textContent = "Play";
-                videoPlayer.pause();
-            } else {
-                // videoPlayer.play();
+      window.addEventListener("scroll", function() {
+          if (!isInViewport(videoPlayer)) {
+            if (!videoPlayer.paused && !videoPlayer.muted) {
+              videoControlBtn.textContent = "Play";
+              videoPlayer.pause();
             }
-        });
-    });
+       } else {
+            // videoPlayer.play();
+              }
+          });
+      });
